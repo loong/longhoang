@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Long Hoang</title>
+    <link href="css/impress.css" rel="stylesheet" />
+	</head>
+	<body>
+		<div id="impress" class="impress-not-supported">
+		
+		<div class="fallback-message" style="margin-bottom: 200px;">
+        <p>Your browser <b>doesn't support the features required</b>, so you are presented with a simplified version without any animation.</p>
+        <p>For the best experience please use the latest browser on your desktop pc.</p>
+    	</div>
+
+			<div id="title" class="step" data-x="0" data-y="0">
+        		<h1>Long Hoang</h1>
+				<h2>Software Engineer</h2>
+				<p>
+					<br />
+					<pre>e: long@mindworker.de  |  p_de: +49 1577 891 7206  |  p_hk: +852 5329 2129</pre>
+				</p>
+	    	</div>
+
+			<!--<div id="navigation" class="step" data-x="0" data-y="3000">
+				<h2>Navigation</h2>
+				<ul>
+					<li>About me</li>
+					<li><a onclick="impress().goto('social')">Social networks</a></li>
+					<li>Development</li>
+					<li>Contact me</li>
+				</ul>
+				<br />
+				&rarr; Or use arrow spaces!
+			</div>-->
+
+			<div id="about" class="step" data-x="-700" data-y="2250" data-rotate="-20">
+				<div id="avatar" style="margin-top: 30px"><img src="img/avatar.png" class="rotating" /></div>
+				<div id="abouttext" style="font-size: 0.8em">
+					<h2>Hey there!</h2>
+					My name is Long. I'm a Vietnamese who was born and raised up in Germany. I'm currently an undergraduate student at the Hong
+					Kong University of Science and Technology, pursuing my Bachelor of Engineering degree in Computer Science.<br /> 
+					<br />
+					Computer Science has been my passion for a long time. My story begins with a website which I created when I was 11-years old. 
+					I used Microsoft's text editor - the most unhelpful tool one can imagine - and I even faked my identity because I was not 
+					old enough to rent a web server legally. The website was cheesy and technically completely outdated, but still I am very proud 
+					of it, because it was my first step into the IT-world.
+				</div>			
+			</div>
+                        
+                        <div id="backpack" class="step" data-x="4000" data-y="-1000" data-rotate="-20">
+                            <div id="backimage" style="margin-top: 30px" class="rotating">
+                                <div style="float:left;"><img src="img/beachresort.png" /></div>
+                            </div>
+                            <div id="backtext" style="font-size: 0.8em">
+                                <h2>Backpacker Long</h2>
+                                After my high school, I decided to take a gap year. I worked as a software developer and then used that money 
+                                to travel through South East Asia on low budget (< 15 USD a day). It was a once in a life time experience!<br />
+                                <ul style="list-style-type: circle; margin-left: 45px; margin-top: 15px; margin-bottom: 15px">
+                                    <li>Traveling over 7`000 km by bus</li>
+                                    <li>Hiking over 4`000 m altitude</li>
+                                    <li>Diving 21 m under the sea</li>
+                                </ul>
+                                For some impressions, I put some slides of my 
+                                <a href="http://www.slideshare.net/LongHoang29/gap-year-41456265" target="_blank"><b>"Why Gap Year" talk</b></a>
+                                online.
+                                
+                                
+                            </div>
+				
+                        </div>
+		
+			<div id="resume" class="step" data-x="0" data-y="3000">
+				<div style="font-size: 0.8em">
+					<h2>Want to know more?</h2>
+					<a href="http://linkedin.com/in/mindworker/" onclick="location.href = 'http://linkedin.com/in/mindworker/';" title="CV on LinkedIn"><b>LinkedIn</b></a> or <a href="#/title" onclick="impress().goto('title')"><b>contact me</b></a>
+				</div>
+			</div>
+
+			<!--<div id="social" class="step" data-x="700" data-y="2250" data-rotate="20">
+				<img src="img/big-cloud.png" /><br />
+				Social Networks
+			</div>
+
+			<div id="twitter" class="step" data-x="527"  data-y="2077" data-rotate="-10">
+				<div id="sign-tooltip" class="tooltipp">Follow me on Twitter!</div>
+				<a href="http://twitter.com/mindworkers" target="_blank">			
+					<img src="img/twitter.png" alt="Follow me on twitter" />
+				</a>
+			</div>
+			<div id="facebook" class="step" data-x="650" data-y="2075" data-rotate="30">
+				<div id="sign-tooltip" class="tooltipp"><br />Facebook</div>
+				<a href="http://facebook.com/yobignol" target="_blank">	
+					<img src="img/facebook.png" alt="Facebook Profile of Long Hoang alias Mindworker" />
+				</a>
+			</div>
+
+			<div id="overview" class="step" data-x="0" data-y="3000" data-scale="3">
+			</div>-->
+
+		</div>
+
+		<div class="hint">
+				<p>Use a spacebar or arrow keys to navigate</p>
+		</div>
+		<script>
+			if ("ontouchstart" in document.documentElement) { 
+					document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+			}
+		</script>
+
+		<script src="js/impress.js"></script>
+		<script>impress();</script>
+	</body>
+</html>
