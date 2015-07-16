@@ -388,7 +388,7 @@
     document.addEventListener("click", function ( event ) {
         var target = event.target;
         // find closest step element
-        while ( !target.classList.contains("step") &&
+        while ( !(target.classList.contains("step") && !target.classList.contains("active")) &&
                 (target != document.body) ) {
             target = target.parentNode;
         }
