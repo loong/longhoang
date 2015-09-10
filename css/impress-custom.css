@@ -1,0 +1,183 @@
+#title\.html {
+    padding: 0;
+    margin-top: -100px;
+    font-size: 20px;
+}
+
+#title\.html h1 {
+    font-size: 120px;
+    line-height: 120px;
+
+    text-shadow: 2px 2px 5px rgba(90, 90, 90, 0.9);
+}
+
+h2 {
+    font-size: 60px;
+    text-shadow: 2px 2px 5px rgba(90, 90, 90, 0.5);
+}
+
+#title\.html h2 {
+    font-size: 60px;
+}
+
+#about\.html, #backpack\.html, #engineer\.html {
+    font-size: 20px;
+    width: 1000px;
+}
+
+#stories\.html {
+    font-size: 16px;
+    width: 1000px;
+}
+
+.storybox {
+    height: 370px;
+}
+
+.thumb-button-box {
+    position: absolute;
+    bottom: 25px;
+    left: 30px;
+    text-align: center;
+}
+
+#avatar {
+    width: 180px;
+    height: 180px;
+    float:left;
+}
+
+#avatar img {
+    padding: 15px 15px 40px 15px;
+    background: #eee;
+    border: 1px solid #fff;
+    position: relative;
+
+    /*shadow*/
+    -moz-box-shadow: 7px 6px 4px rgba(100,100,100,0.5);
+    -webkit-box-shadow: 7px 6px 4px rgba(100,100,100,0.5);
+    box-shadow: 7px 6px 4px rgba(100,100,100,0.5);
+
+    /* For IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
+    /* For IE 5.5 - 7 */
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000');
+}
+
+#backimage {
+    width: 200px;
+    height: 150px;
+    float:left;
+}
+
+#backimage img {
+    padding: 15px 15px 40px 15px;
+    background: #eee;
+    border: 1px solid #fff;
+    position: relative;
+
+    /*shadow*/
+    -moz-box-shadow: 7px 6px 4px rgba(100,100,100,0.5);
+    -webkit-box-shadow: 7px 6px 4px rgba(100,100,100,0.5);
+    box-shadow: 7px 6px 4px rgba(100,100,100,0.5);
+
+    /* For IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
+    /* For IE 5.5 - 7 */
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000');
+}
+
+#about\.html.active .rotating{
+    -webkit-transition: 0.5s;
+    -moz-transition:    0.5s;
+    -ms-transition:     0.5s;
+    -o-transition:      0.5s;
+    transition:         0.5s;
+
+    /* rotate */
+    -webkit-transform: rotate(-7deg);
+    -moz-transform:    rotate(-7deg);
+    -ms-transform:     rotate(-7deg);
+    -o-transform:      rotate(-7deg);
+    transform:         rotate(-7deg);
+
+    -webkit-transition-delay: 1.25s;
+    -moz-transition-delay:    1.25s;
+    -ms-transition-delay:     1.25s;
+    -o-transition-delay:      1.25s;
+    transition-delay:         1.25s;
+}
+
+#about\.html.active #abouttext {
+    -webkit-transition: 0.5s;
+    -moz-transition:    0.5s;
+    -ms-transition:     0.5s;
+    -o-transition:      0.5s;
+    transition:         0.5s;
+
+    -webkit-transform: scale(1.1);
+    -moz-transform:    scale(1.1);
+    -ms-transform:     scale(1.1);
+    -o-transform:      scale(1.1);
+    transform:         scale(1.1);
+
+    -webkit-transition-delay: 1.25s;
+    -moz-transition-delay:    1.25s;
+    -ms-transition-delay:     1.25s;
+    -o-transition-delay:      1.25s;
+    transition-delay:         1.25s;
+}
+
+#abouttext {
+    margin-left: 120px;
+    width: 600px;
+    float:left;
+}
+
+#backpack\.html.active .rotating{
+    -webkit-transition: 0.5s;
+    -moz-transition:    0.5s;
+    -ms-transition:     0.5s;
+    -o-transition:      0.5s;
+    transition:         0.5s;
+
+    /* rotate */
+    -webkit-transform: rotate(-7deg);
+    -moz-transform:    rotate(-7deg);
+    -ms-transform:     rotate(-7deg);
+    -o-transform:      rotate(-7deg);
+    transform:         rotate(-7deg);
+
+    -webkit-transition-delay: 1.25s;
+    -moz-transition-delay:    1.25s;
+    -ms-transition-delay:     1.25s;
+    -o-transition-delay:      1.25s;
+    transition-delay:         1.25s;
+}
+
+#backpack\.html.active #backtext {
+    -webkit-transition: 0.5s;
+    -moz-transition:    0.5s;
+    -ms-transition:     0.5s;
+    -o-transition:      0.5s;
+    transition:         0.5s;
+
+    -webkit-transform: scale(1.1);
+    -moz-transform:    scale(1.1);
+    -ms-transform:     scale(1.1);
+    -o-transform:      scale(1.1);
+    transform:         scale(1.1);
+
+    -webkit-transition-delay: 1.25s;
+    -moz-transition-delay:    1.25s;
+    -ms-transition-delay:     1.25s;
+    -o-transition-delay:      1.25s;
+    transition-delay:         1.25s;
+}
+
+#backtext {
+    margin-left: 120px;
+    width: 600px;
+    float:left;
+}
+
