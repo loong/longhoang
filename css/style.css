@@ -69,13 +69,13 @@ h2 {
     filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000');
 }
 
-#avatar, #backimage, #frisbeeimage {
+.side-poloroid-img {
     width: 180px;
     height: 180px;
     float:left;
 }
 
-#avatar img, #backimage img, #frisbeeimage img {
+.side-poloroid-img img {
     padding: 15px 15px 40px 15px;
     background: #eee;
     border: 1px solid #fff;
