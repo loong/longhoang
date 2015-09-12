@@ -11,15 +11,6 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-.row{
-    overflow: hidden; 
-}
-
-[class*="col-"]{
-    margin-bottom: -99999px;
-    padding-bottom: 99999px;
-}
-
 #title {
     padding: 0;
     margin-top: -100px;

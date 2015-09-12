@@ -10,5 +10,18 @@ function equalHeight(group) {
 } 
 
 $(document).ready(function() {   
-    equalHeight($(".storybox")); 
+    equalHeight($(".storybox"));
 });
+
+function tooltipStory() {
+    setTimeout(showTooltipStory, 2000);
+    setTimeout(hideTooltipStory, 4000);
+}
+
+function showTooltipStory() {
+    $('[data-toggle="tooltip-story"]').tooltip("show");
+}
+
+function hideTooltipStory() {
+    $('[data-toggle="tooltip-story"]').tooltip("hide");
+}
