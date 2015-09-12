@@ -134,3 +134,7 @@ h2 {
     width: 600px;
     float:left;
 }
+
+.clear {
+    clear:both;
+}
