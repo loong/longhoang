@@ -684,7 +684,8 @@
         
         // Prevent default keydown action when one of supported key is pressed.
         document.addEventListener("keydown", function ( event ) {
-            if ( event.keyCode === 9 || ( event.keyCode >= 32 && event.keyCode <= 34 ) || (event.keyCode >= 37 && event.keyCode <= 40) ) {
+            //LH if ( event.keyCode === 9 || ( event.keyCode >= 32 && event.keyCode <= 34 ) || (event.keyCode >= 37 && event.keyCode <= 40) ) {
+	    if ( ( event.keyCode >= 33 && event.keyCode <= 34 ) || (event.keyCode >= 37 && event.keyCode <= 40) ) {
                 event.preventDefault();
             }
         }, false);
@@ -712,8 +713,8 @@
                     case 38: // up
                              api.prev();
                              break;
-                    case 9:  // tab
-                    case 32: // space
+                    //LH case 9:  // tab
+                    //LH case 32: // space
                     case 34: // pg down
                     case 39: // right
                     case 40: // down
