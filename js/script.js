@@ -8,26 +8,22 @@ function equalHeight(group) {
     });    
     group.each(function() { $(this).height(tallest); });
 } 
+equalHeight($(".storybox"));
 
 $(document).ready(function() {   
     equalHeight($(".storybox"));
 
-    $(document).ready(function () {
-	$("input#submit").click(function(){
-            $.ajax({
-		type: "POST",
-		url: "process.php", //process to mail
-		data: $('form.contact').serialize(),
-		success: function(msg){
-                    $("#thanks").html(msg) //hide button and show thank you
-                    $("#form-content").modal('hide'); //hide popup  
-		},
-		error: function(){
-                    alert("failure");
-		}
-            });
-	});
+    $("input#submit").click(function(){
+
+	var link = "mailto:long@mindworker.de"
+            + "?subject=" + encodeURIComponent("Contact form - Longhoang website")
+            + "&body=" + encodeURIComponent("Name: " + document.getElementById('conName').value 
+				+ "\nEmail: " + document.getElementById('conEmail').value 
+				+ "\n\n" + document.getElementById('conText').value );
+
+	window.open(link, '_blank');
     });
+
 
 });
 
