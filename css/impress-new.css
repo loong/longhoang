@@ -403,3 +403,4 @@ a:focus {
 .impress-enabled          { pointer-events: none }
 .impress-enabled #impress { pointer-events: auto }
 nav { pointer-events: auto }
+a, input, button, textarea { pointer-events: auto }

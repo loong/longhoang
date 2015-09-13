@@ -57,11 +57,49 @@
 					
 					<ul class="nav navbar-nav navbar-right">
 					  <li><a href="http://linkedin.com/in/mindworker/" target="_blank">LinkedIn</a></li>
-					  <li><a href="#/title">Contact</a></li>
+					  <li><a href="#/title" data-toggle="modal" data-target="#contactModal">Contact</a></li>
 					</ul>
 				</div><!-- /.navbar-collapse -->
 			</div><!-- /.container-fluid -->
 		</nav>
+
+		<!-- Modal -->
+		<div id="contactModal" class="modal fade" role="dialog">
+		  <div class="modal-dialog">
+
+		    <!-- Modal content-->
+		    <div class="modal-content">
+		      <div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal">&times;</button>
+			<h4 class="modal-title">Contact me</h4>
+		      </div>
+		      <div class="modal-body">
+			
+			<form class="contact" name="contact" role="form">
+			  <div class="form-group">
+			    <label class="label" style="color: black;" for="name">Your Name</label>
+			    <input type="text" name="name" class="input-xlarge form-control"><br />
+			  </div>
+			  <div class="form-group">
+			    <label class="label" style="color: black;" for="email">Your E-mail</label>
+			    <input type="email" name="email" class="input-xlarge form-control"><br />
+			  </div>
+			  <div class="form-group">
+			    <label class="label" style="color: black;" for="message">Enter a Message</label>
+			    <textarea name="message" class="input-xlarge form-control"></textarea>
+			  </div>
+			</form>
+
+		      </div>
+		      <div class="modal-footer">
+			<input class="btn btn-success" type="submit" value="Send!" id="submit">
+			<a href="#" class="btn" data-dismiss="modal">Nah.</a>
+		      </div>
+		    </div>
+
+		  </div>
+		</div>
+
 
 		<div id="impress">
 			
@@ -74,8 +112,9 @@
         			<h1>Long Hoang</h1>
 				<h2>Turns beer into code</h2>
 				<br />
-				<p>e: long@mindworker.de  |  p_de: +49 1577 891 7206  |  p_hk: +852 5329 2129</p>
-	    		</div>
+				<p>e: <a href="#/title" data-toggle="modal" data-target="#contactModal">long@mindworker.de</a>  |  p_de: +49 1577 891 7206  |  p_hk: +852 5329 2129</p>
+	    		
+			</div>
 
 			<div class="clear"></div>
 
@@ -187,7 +226,6 @@ After high school, I continued to play in Hanoi, Vietnam with the HUC team and i
 				<h2>Want to know more?</h2>
 				<a href="http://linkedin.com/in/mindworker/" title="CV on LinkedIn"><b>LinkedIn</b></a> or <a href="#/title"><b>contact me</b></a>
 			</div>
-
 
 		</div>
 
