@@ -138,3 +138,7 @@ h2 {
 .clear {
     clear:both;
 }
+.thumbnail.storybox{
+    min-height: 390px;
+    height: auto !important;
+}
