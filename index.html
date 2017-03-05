@@ -12,6 +12,11 @@
     <link href="css/impress.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
 
+    <!-- Additional Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Nixie+One&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Arimo&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
@@ -26,44 +31,44 @@
 
     <script src="js/script.js"></script>
   </head>
-	<body class="impress-not-supported">
+  <body class="impress-not-supported">
 
-		<!-- Modal -->
-		<div id="contactModal" class="modal fade" role="dialog">
-		  <div class="modal-dialog">
+    <!-- Modal -->
+    <div id="contactModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
 
-		    <!-- Modal content-->
-		    <div class="modal-content">
-		      <div class="modal-header">
-			<button type="button" class="close" data-dismiss="modal">&times;</button>
-			<h4 class="modal-title">Contact me</h4>
-		      </div>
-		      <div class="modal-body">
-			
-			<form class="contact" name="contact" role="form">
-			  <div class="form-group">
-			    <label class="label" style="color: black;" for="name">Your Name</label>
-			    <input id="conName" type="text" name="name" class="input-xlarge form-control"><br />
-			  </div>
-			  <div class="form-group">
-			    <label class="label" style="color: black;" for="email">Your E-mail</label>
-			    <input id="conEmail" type="email" name="email" class="input-xlarge form-control"><br />
-			  </div>
-			  <div class="form-group">
-			    <label class="label" style="color: black;" for="message">Enter a Message</label>
-			    <textarea id="conText" name="message" class="input-xlarge form-control"></textarea>
-			  </div>
-			</form>
+	<!-- Modal content-->
+	<div class="modal-content">
+	  <div class="modal-header">
+	    <button type="button" class="close" data-dismiss="modal">&times;</button>
+	    <h4 class="modal-title">Contact me</h4>
+	  </div>
+	  <div class="modal-body">
+	    
+	    <form class="contact" name="contact" role="form">
+	      <div class="form-group">
+		<label class="label" style="color: black;" for="name">Your Name</label>
+		<input id="conName" type="text" name="name" class="input-xlarge form-control"><br />
+	      </div>
+	      <div class="form-group">
+		<label class="label" style="color: black;" for="email">Your E-mail</label>
+		<input id="conEmail" type="email" name="email" class="input-xlarge form-control"><br />
+	      </div>
+	      <div class="form-group">
+		<label class="label" style="color: black;" for="message">Enter a Message</label>
+		<textarea id="conText" name="message" class="input-xlarge form-control"></textarea>
+	      </div>
+	    </form>
 
-		      </div>
-		      <div class="modal-footer">
-			<input class="btn btn-success" type="submit" value="Send!" id="submit">
-			<a href="#" class="btn" data-dismiss="modal">Nah.</a>
-		      </div>
-		    </div>
+	  </div>
+	  <div class="modal-footer">
+	    <input class="btn btn-success" type="submit" value="Send!" id="submit">
+	    <a href="#" class="btn" data-dismiss="modal">Nah.</a>
+	  </div>
+	</div>
 
-		  </div>
-		</div>
+      </div>
+    </div>
 
 
 		<div id="impress">
@@ -73,14 +78,35 @@
 				<p>For the best experience, I <b>strongly recommend</b> to use the latest browser on your desktop pc</p>
     			</div>
 
-			<div id="title" class="step" data-x="0" data-y="0" data-scale="4">
-        			<h1>Long Hoang</h1>
-				<h2>Turns beer into code</h2>
-				<br />
-				<p>e: <a href="#/title" data-toggle="modal" data-target="#contactModal">long@mindworker.de</a>  |  p_de: +49 1577 891 7206  |  p_hk: +852 5329 2129</p>
-	    		
-			</div>
+			<div id="title" class="step" data-x="0" data-y="0" data-scale="4">	
+			  <div class="thumbnail namecard">
 
+			    <div class="arrow-wrapper">
+			      <div class="arrow-down"></div>
+			      <div class="arrow-text">{ }</div>
+			    </div>
+			    
+			    <div style="height: 100px;"></div>
+
+			    <div>
+			      <h1>LONG HOANG</h1>
+			      <h2>Turns Beer Into Code</h2>
+			    </div>
+
+			    <div class="contact-box">
+			      <div class="contact-left">
+				de: +49 15778917206<br />
+				hk: +852 5329 2129
+			      </div>
+			      <div class="contact-right">
+				longhoang.de<br />
+				<a href="#/title" data-toggle="modal" data-target="#contactModal">long@mindworker.de</a>
+			      </div>
+			    </div>
+			    
+			  </div>  
+			</div>
+			
 			<div class="clear"></div>
 
 			<div id="about" class="step" data-x="-700" data-y="2250" data-rotate="-20">
