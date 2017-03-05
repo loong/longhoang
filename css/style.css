@@ -1,4 +1,4 @@
-body {
+body {    
     background: rgb(200, 220, 255);
     background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(220, 20, 255)), to(rgb(150, 180, 195)));
     background: -webkit-radial-gradient(rgb(200, 220, 255), rgb(150, 180, 195));
@@ -7,6 +7,15 @@ body {
     background:         radial-gradient(rgb(200, 220, 255), rgb(150, 180, 195));
 
     -webkit-font-smoothing: antialiased;
+}
+
+.hint {
+    font-family: "Josefin Sans";
+    font-size: 1.8em;
+
+    margin: 0 auto;
+    height: 60px;
+    max-width: 1000px;
 }
 
 #title {
@@ -84,15 +93,6 @@ body {
     text-align: right;
 }
 
-.hint {
-    font-family: "Josefin Sans";
-    font-size: 1.8em;
-
-    margin: 0 auto;
-    height: 60px;
-    max-width: 1000px;
-}
-
 #about, #backpack, #engineer, #frisbeelover {
     font-size: 20px;
     width: 1000px;
@@ -122,15 +122,16 @@ body {
 }
 
 .side-poloroid-img img {
+    margin-left: -740px;
     padding: 15px 15px 40px 15px;
     background: #eee;
     border: 1px solid #fff;
     position: relative;
 
     /*shadow*/
-    -moz-box-shadow: 7px 6px 4px rgba(100,100,100,0.5);
-    -webkit-box-shadow: 7px 6px 4px rgba(100,100,100,0.5);
-    box-shadow: 7px 6px 4px rgba(100,100,100,0.5);
+    -moz-box-shadow: 7px 5px 4px rgba(100,100,100,0.3);
+    -webkit-box-shadow: 7px 5px 4px rgba(100,100,100,0.3);
+    box-shadow: 7px 5px 4px rgba(100,100,100,0.3);
 
     /* For IE 8 */
     -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
@@ -180,14 +181,16 @@ body {
 }
 
 #abouttext, #backtext, #engitext, #frisbeetext {
-    margin-left: 120px;
-    width: 600px;
     float:left;
+    margin-left: 200px;
+    padding: 40px;
+    width: 500px;
 }
 
 .clear {
     clear:both;
 }
+
 .thumbnail.storybox{
     min-height: 390px;
     height: auto !important;
@@ -212,4 +215,17 @@ a:hover,
 a:focus {
     background: rgba(255,255,255,1);
     text-decoration: none;
+}
+
+.enlarge:hover{
+    color: #424242; 
+    -webkit-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -ms-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    transition: all .3s ease-in;
+    opacity: 1;
+    transform: scale(2);
+    -ms-transform: scale(2); /* IE 9 */
+    -webkit-transform: scale(2); /* Safari and Chrome */
 }

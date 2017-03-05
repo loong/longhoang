@@ -9,27 +9,24 @@
 
     <title>Long Hoang - Turns Beer Into Code</title>
 
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" type="text/javascript"></script>
+    
     <link href="css/impress.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    
+    <script src="js/script.js"></script>
+
+    <!-- Octo badge -->
+    <script src="http://cdn.jsdelivr.net/octobadge.github/0.0.1/badge.min.js" type="text/javascript"></script>
+    <link href="http://cdn.jsdelivr.net/octobadge.github/0.0.1/badge.min.css" rel="stylesheet" type="text/css" />
 
     <!-- Additional Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Josefin+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Nixie+One&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Arimo&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css">
-
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script>
-
-    <script src="js/script.js"></script>
   </head>
   <body class="impress-not-supported">
 
@@ -110,15 +107,15 @@
 			<div class="clear"></div>
 
 			<div id="about" class="step" data-x="-700" data-y="2250" data-rotate="-20">
-			  <div class="side-poloroid-img" style="margin-top: 30px"><img src="img/avatar.png" class="rotating" alt="Profile Picture of Long" /></div>
-			  <div id="abouttext" style="font-size: 0.8em">
+			  <div class="thumbnail" id="abouttext" style="font-size: 0.8em">
 			    <h2>Hello there!</h2>
-			    I'm a German Born Vietnamese, raised up in the small town of Überlingen. Currently, I'm an undergraduate student at the Hong Kong University of Science and Technology and I'm passionate about Computer Science and Entrepreneurship.<br /> 
+			    I am a Vietnamese who was born and raised up in <a href="https://goo.gl/ymmry0" target="_blank">Überlingen</a>, Germany. Entrepreneurship and Computer Science has been my passion for a long time. My journey began with a website that I created when I was 11. I faked my age to be able to rent webspace, then quickly earned my first money with simple apps and online services.<br />
 			    <br />
-			    My journey began with a website which I created when I was 11-years old. I faked my identity because I was not old enough to rent my web server legally. I served about 400 users a day and was really amazed how I - as a young kiddo - could serve so many people.<br />
-			    <br />
-			    Today, I am <script>document.write(calculateAge(new Date(1992, 6, 26)))</script>-years old and was involved in several start ups in Germany and am currently involved in a P2P currency exchange start up in Hong Kong. My expertise are in Robotics, embedded systems and backend web development.
-			  </div>			
+			    Up until today, I was deeply involved in several startups in Germany and Hong Kong, and helped startups in Europe and North America with my expertise in Microservice systems. Apart from backend systems, I am also familiar with IoT and robotics.<br />
+			  </div>
+			  <div class="side-poloroid-img" style="margin-top: 30px">
+			    <img src="img/avatar.png" class="rotating" alt="Profile Picture of Long" />
+			  </div>
 			</div>
 			
 			<div class="clear"></div>
@@ -135,7 +132,7 @@
 
 				<div class="caption">
 				  <h3>Backpacker</h3>
-				  <p>After high school I took a Gap year and traveled for 9 months in South East Asia. <a href="#/backpack" onclick="tooltipStory()"> More</a>.</p>
+				  <p>I have been to more than 30 countries now. Most memorable was my Gap year, when I traveled for 9 months through South East Asia. <a href="#/backpack" onclick="tooltipStory()">More</a>.</p>
 				</div>
 			      </div>
 			    </div>
@@ -145,7 +142,7 @@
 				<img class="img-responsive" src="img/rov.jpg" alt="Engineer Long">
 				<div class="caption">
 				  <h3>Engineer</h3>
-				  <p>I have been programming for more than a decade. I built autonomous agriculture robots and underwater ROVs. <a href="#/engineer" onclick="tooltipStory()"> More</a>.</p>
+				  <p>I have been programming for more than a decade. I built autonomous agriculture robots, underwater ROVs and large backend systems. <a href="#/engineer" onclick="tooltipStory()">More</a>.</p>
 				</div>
 			      </div>
 			    </div>
@@ -154,8 +151,8 @@
 			      <div class="thumbnail storybox">
 				<img class="img-responsive" src="img/vnhat.jpg" alt="Frisbee Lover Long">
 				<div class="caption">
-				  <h3>Frisbee lover</h3>
-				  <p>Frisbee got me for a few years already. I love this sport! <a href="#/frisbeelover" onclick="tooltipStory()"> More</a>.</p>
+				  <h3>Ultimate Frisbee Player</h3>
+				  <p>Frisbee got me for a few years already. I love the spirit of this sport! <a href="#/frisbeelover" onclick="tooltipStory()"> More</a>.</p>
 				</div>
 			      </div>
 			    </div>
@@ -166,10 +163,7 @@
 			<div class="clear"></div>
 
                         <div id="backpack" class="step" data-x="4100" data-y="0" data-rotate="-60">
-			  <div class="side-poloroid-img rotating" style="margin-top: 30px">
-			    <div style="float:left;"><img src="img/beachresort.png" alt="Beach Resort" /></div>
-			  </div>
-			  <div id="backtext" style="font-size: 0.8em">
+			  <div class="thumbnail" id="backtext" style="font-size: 0.8em">
 			    <h2>Backpacker Long</h2>
 			    After my high school, I decided to take a gap year. I worked as a software developer and then used that money to travel through South East Asia on low budget (&lt; 12 EUR a day). It was a once in a life time experience!<br />
 			    <ul style="list-style-type: circle; margin-left: 45px; margin-top: 15px; margin-bottom: 15px">
@@ -177,38 +171,47 @@
 			      <li>Hiking over 4`000 m altitude</li>
 			      <li>Diving 21 m under the sea</li>
 			    </ul>
+			    Until now I have visited over 30 countries! This is where I have been in the last 5 years (click to enlarge):<br />
+			    <br />
+			      <img class="enlarge" src="img/places-visited.png" alt="Places Long has visited" />
+
 			  </div>
-			  
+			  <div class="side-poloroid-img rotating" style="margin-top: 30px;">
+			      <img src="img/beachresort.png" alt="Beach Resort" />
+			  </div>			  
                         </div>
 			
 			<div class="clear"></div>
 
                         <div id="engineer" class="step" data-x="4000" data-y="-1000" data-rotate="-20">
-				<div class="side-poloroid-img rotating" style="margin-top: 30px">
-					<div style="float:left;"><img src="img/laser.jpg" alt="Engineering in action" /></div>
-				</div>
-				<div id="engitext" style="font-size: 0.8em">
+				<div class="thumbnail" id="engitext" style="font-size: 0.8em">
 					<h2>Engineer Long</h2>
-					I started to do simple web programming in 6th grade. Later, I found my passion into Robotics by joining the Sch&uuml;lerforschungszentrum. Soon my team joined the World Championship for autonomous agriculture robots (as the only non-university team). In our first year we ranked second last, but we worked hard, so that we could beat most of the teams 4 years after, when we ranked 3rd.<br />
+					I middle school I joined the <a href="http://sfz-bw.de/" target="_blank">Sch&uuml;lerforschungszentrum</a>, a research center for young researchers, where I built field robots. My team joined the World Championship for autonomous agriculture robots (as the only non-university team). In our first attempt we got second last, but we worked hard and became 2nd Runner Up after 4 years.<br />
 <br />
-In university, I joined the HKUST robotics team, where I joined the underwater ROV team, where I dived deeper into embedded systems. I also started to learn and use golang for backend development.<br />
+In university, I joined team <a href="http://www.epoxsea.com/" target="_blank">Epoxsea</a> of the <a href="https://en.wikipedia.org/wiki/HKUST_Robotics_Team" target="_blank">HKUST robotics team</a>, developing underwater ROVs for shipwreck exploration and marine engineering.<br />
+<br />
+I also build my own <a href="https://github.com/mindworker/scheme-interpreter" target="_blank">Turing-complete functional programming language</a> and a peer-to-peer currency <a href="http://plainexchange.xyz" target="_blank">exchange platform</a>.<br />
+<br />
+<github-badge user="mindworker" badge="octogeek"></github-badge>
+
 				</div>
-				
+				<div class="side-poloroid-img rotating" style="margin-top: 30px">
+				  <img src="img/laser.jpg" alt="Engineering in action" />
+				</div>				
                         </div>
 
 			<div class="clear"></div>
 
 			<div id="frisbeelover" class="step" data-x="3900" data-y="-2000" data-rotate="20">
-				<div class="side-poloroid-img rotating" style="margin-top: 30px">
-					<div style="float:left;"><img src="img/ustfrisbee.jpg"  alt="Frisbee made it to Uni sport!" /></div>
-				</div>
-				<div id="frisbeetext" style="font-size: 0.8em">
+				<div class="thumbnail" id="frisbeetext" style="font-size: 0.8em">
 					<h2>Frisbee Lover Long</h2>
 					I started playing Ultimate Frisbee when I was in high school. In short, Ultimate Frisbee is a mixture between American Football and Basketball with a frisbee disc. I love the spirit and the people of this sport!<br />
 <br />
 After high school, I continued to play in Hanoi, Vietnam with the HUC team and in university I try to get people excited about frisbee. Recently, I joined the league of HKUPA.<br />
 				</div>
-				
+				<div class="side-poloroid-img rotating" style="margin-top: 30px">
+				  <img src="img/ustfrisbee.jpg"  alt="Frisbee made it to Uni sport!" />
+				</div>				
                         </div>
 
 			<div class="clear"></div>
@@ -221,7 +224,7 @@ After high school, I continued to play in Hanoi, Vietnam with the HUC team and i
 		</div>
 
 		<div class="hint">
-			<p>Use arrow keys to navigate!</p>
+			<p><center>Use arrow keys to navigate!</center></p>
 		</div>
 
 		<script>
