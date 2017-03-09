@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=1024" />
+    <meta name="viewport" content="width=1200" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
 
     <meta name="author" content="Long Hoang" />
@@ -12,6 +12,9 @@
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" type="text/javascript"></script>
     
     <link href="css/impress.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/magnifier.css">
+    <script type="text/javascript" src="js/Event.js"></script>
+    <script type="text/javascript" src="js/Magnifier.js"></script>
     <link href="css/style.css" rel="stylesheet" />
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css">
@@ -85,7 +88,7 @@
 			<div id="stories" class="step" data-x="-1400" data-y="4500" data-rotate="-40" data-scale="4">
 			  <h1>I am a ...</h1>
 			  <br />
-			  <div class="row">
+			  <div class="row-fluid">
 
 			    <div class="col-xs-4">
 			      <div class="thumbnail storybox">
@@ -128,7 +131,10 @@
 
 			<div class="clear"></div>
 
+	
+
                         <div id="backpack" class="step" data-x="4100" data-y="0" data-rotate="-60">
+			  <div class="magnifier-preview" id="preview" style="width: 800px; height: 357px;position:absolute; margin-top: -20px;"></div>
 			  <div class="thumbnail" id="backtext" style="font-size: 0.8em">
 			    <h2>Backpacker Long</h2>
 			    After my high school, I decided to take a gap year. I worked as a software developer and then used that money to travel through South East Asia on low budget (&lt; 12 EUR a day). It was a once in a life time experience!<br />
@@ -137,14 +143,16 @@
 			      <li>Hiking over 4`000 m altitude</li>
 			      <li>Diving 21 m under the sea</li>
 			    </ul>
-			    Until now I have visited over 30 countries! This is where I have been in the last 5 years (click to enlarge):<br />
+			    Until now I have visited over 30 countries! This is where I have been in the last 5 years (hover to magnify):<br />
 			    <br />
-			      <img class="enlarge" src="img/places-visited.png" alt="Places Long has visited" />
-
+			    <div class="magnifier-thumb-wrapper">
+			      <img id="thumb" src="img/places-visited-thumb.png" alt="Places Long has visited" />
+			    </div>
 			  </div>
+			    
 			  <div class="side-poloroid-img rotating" style="margin-top: 30px;">
 			      <img src="img/beachresort.png" alt="Beach Resort" />
-			  </div>			  
+			  </div>
                         </div>
 			
 			<div class="clear"></div>
@@ -201,5 +209,17 @@ After high school, I continued to play in Hanoi, Vietnam with the HUC team and i
 
 		<script src="js/impress.js"></script>
 		<script>impress().init();</script>
+
+		<script type="text/javascript">
+		 var m = new Magnifier(new Event());
+		  m.attach({
+		    thumb: '#thumb',
+		    large: 'img/places-visited.png',
+		    largeWrapper: 'preview',
+		    mode: 'outside',
+		    zoomable: true
+		  });
+		</script>
+
 	</body>
 </html>
