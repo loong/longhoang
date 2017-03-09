@@ -227,3 +227,10 @@ a:focus {
     -ms-transform: scale(2); /* IE 9 */
     -webkit-transform: scale(2); /* Safari and Chrome */
 }
+
+.storybox a,
+.storybox a:hover,
+.storybox a:focus {
+    padding: 0;
+    text-decoration: none;
+}
