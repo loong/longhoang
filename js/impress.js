@@ -174,7 +174,7 @@
                            
                           // and `classList` and `dataset` APIs
                            ( body.classList ) &&
-                           ( body.dataset ) &&
+                           ( body.dataset )
                            
                           // but some mobile devices need to be blacklisted,
                           // because their CSS 3D support or hardware is not
@@ -182,7 +182,6 @@
                           
                           // @Note: Long hat hier herumgefutscht
                           //( ua.search(/(iphone)|(ipod)|(android)/) === -1 );
-                          ( ua.search(/(blabli)/) === -1 );
     
     if (!impressSupported) {
         // we can't be sure that `classList` is supported
